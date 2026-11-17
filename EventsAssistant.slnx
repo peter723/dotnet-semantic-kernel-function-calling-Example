@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/EventsAssistant.Api/EventsAssistant.Api.csproj" />
+  <Project Path="src/EventsAssistant.Application/EventsAssistant.Application.csproj" />
+  <Project Path="src/EventsAssistant.Domain/EventsAssistant.Domain.csproj" />
+  <Project Path="src/EventsAssistant.Infrastructure/EventsAssistant.Infrastructure.csproj" />
+</Solution>

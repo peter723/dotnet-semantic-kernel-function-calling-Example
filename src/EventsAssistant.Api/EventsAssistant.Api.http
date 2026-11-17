@@ -1,0 +1,28 @@
+@EventsAssistant.Api_HostAddress = https://localhost:7241
+
+### List upcoming events
+GET {{EventsAssistant.Api_HostAddress}}/api/events
+
+### Get event details
+GET {{EventsAssistant.Api_HostAddress}}/api/events/1
+
+### Book a seat
+POST {{EventsAssistant.Api_HostAddress}}/api/events/1/bookings
+Content-Type: application/json
+
+{
+  "attendeeName": "Peter"
+}
+
+### Ask the AI assistant
+POST {{EventsAssistant.Api_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "What events are coming up?"
+    }
+  ]
+}
